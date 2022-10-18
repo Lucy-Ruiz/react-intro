@@ -10,7 +10,7 @@ const EntriesChartTracker = (props) => {
             return [entry.date, entry.weight];
         });
         setChartData(tempChartData);
-    })
+    }, [props.parentEntries])
 
     return ( 
         <Chart
